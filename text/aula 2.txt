@@ -1,0 +1,28 @@
+VOLUME NO DOCKER - E A FORMA DE ARMAZENAR ESTADO - ESTADO: QUANDO EU MATAR, ELE VAI MANDAR OS ARQUIVOS.
+
+PORQUE PODE SER UM PROBLEMA? PORQUE QUANDO QUEREMOS ESCALAR DE FORMA HORIZONTAL, VAI TER 50 APLICAÇÕES RODANDO, E PRA ISSO PRECISA SER STATELESS - NAO ARMAZENAR NADA EM DISCO
+- SE MATAR, ELA VAI SUBIR DE VOLTA. 
+SE PRECISAR, HOSPEDA; 
+
+
+📌 1. O que é RabbitMQ
+
+    É um message broker (corretor de mensagens), que implementa o protocolo AMQP (Advanced Message Queuing Protocol).
+
+    Seu papel principal é permitir que diferentes partes de um sistema se comuniquem de forma assíncrona, confiável e desacoplada.
+
+- Producer → Exchange → Queue → Consumer
+- Exchange types: direct, fanout, topic, headers
+- Routing key + Binding = entrega correta
+- Ack garante que a mensagem foi processada
+- Durable = fila persiste, Persistent = mensagem salva no disco
+- Use prefetch e DLX para controle e segurança
+- AMQP 0.9.1 é o protocolo base
+
+
+COMANDOS: 
+npx drizzle-kit generate - // GERA AS MIGRATES
+npx drizzle-kit migrate -/ RODA AS MIGRATES NO BANCO.
+
+
+- comunicacao entre servicos padronizar  - jsonSchema

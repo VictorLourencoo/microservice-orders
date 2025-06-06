@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1749164150178,
+      "tag": "0000_parallel_squadron_sinister",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1749165221547,
+      "tag": "0001_condemned_loa",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1749240102314,
+      "tag": "0002_petite_lady_vermin",
+      "breakpoints": true
+    }
+  ]
+}

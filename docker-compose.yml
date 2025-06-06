@@ -1,0 +1,11 @@
+services:
+  broker:
+    image: rabbitmq:3-management ## IMAGEM DO RABBITMQ COM A INTERFACE WEB
+    ports:
+      - "5672:5672" ## porta TCP - ENVIAR E RECEBER MENSAGENS
+      - "15672:15672" ## PORTA DA INTERFACE WEB
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq ## VOLUME PARA PERSISTIR OS DADOS DO RABBITMQ
+
+volumes:
+  rabbitmq_data: ## NOME DO VOLUME
