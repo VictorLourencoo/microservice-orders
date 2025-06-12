@@ -1,3 +1,5 @@
+
+import "@opentelemetry/auto-instrumentations-node/register"
 import "../broker/subscribe.ts"
 
 import { fastify } from 'fastify'
