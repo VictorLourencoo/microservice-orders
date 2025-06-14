@@ -1,17 +1,15 @@
 services:
-  invoices-pg:
+  identity-pg:
     image: bitnami/postgresql:latest
     ports:
-      - '5433:5432'
+      - '5436:5432'
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=invoices
+      - POSTGRES_DB=identity
     volumes:
-      - invoices_data:/bitnami/postgresql
+      - identity_data:/bitnami/postgresql
       - ./docker:/docker-entrypoint-initdb.d
 
 volumes:
-  invoices_data:
-
-
+  identity_data:
